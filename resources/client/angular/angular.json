@@ -48,9 +48,13 @@
                   "maximumError": "4kb"
                 }
               ],
+              "outputPath": "../../../public/assets/angular",
+              // "deployUrl": "/assets/angular/",
               "outputHashing": "all"
             },
             "development": {
+              "outputPath": "dist/assets/angular",
+              "baseHref": "/assets/angular/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,

@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration=dev -o",
     "build": "ng build",
+    "build:production": "ng build --production && cp ../../../public/assets/angular/index.html ../../views/angular.blade.php",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
